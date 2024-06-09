@@ -3,11 +3,11 @@ import os
 
 import aws_cdk as cdk
 
-from hello_node.hello_node_stack import HelloNodeStack
+from hello_node.hello_node_stack import HelloWorldEcsStack
 
 
 app = cdk.App()
-HelloNodeStack(app, "HelloNodeStack",
+HelloWorldEcsStack(app, "HelloNodeStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
     # but a single synthesized template can be deployed anywhere.
